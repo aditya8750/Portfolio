@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Sharma — Software Engineer & Web Developer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+
+    <!-- Space Animation: Canvas Starfield -->
+    <canvas id="spaceCanvas"></canvas>
+
+    <!-- Space Background Ambient Cosmic Glows -->
+    <div class="glow-orb orb-1 float-anim-1"></div>
+    <div class="glow-orb orb-2 float-anim-2"></div>
+    <div class="glow-orb orb-3 float-anim-3"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-code">&lt;</span>Aditya<span class="logo-accent">.dev</span><span class="logo-code"> /&gt;</span>
+            </a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#tools" class="nav-link">Skills & Stack</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="./Aadittya_Resume.pdf" class="btn btn-nav" download><i class="fas fa-file-download"></i> CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="status-badge pulse-glow">
+                    <span class="status-dot"></span> Aspiring Software Engineer | BCA Graduate
+                </div>
+                <h1 class="hero-title">
+                    Building the future with <span class="cosmic-text-anim">clean code</span> & practical passion.
+                </h1>
+                <p class="hero-description">
+                    Hi, I'm <strong>Aditya Sharma</strong>. I am a software professional currently working at <strong>MagicEdTech</strong> while expanding my software development portfolio across Java, MySQL, and full-stack web applications.
+                </p>
+                <div class="hero-actions">
+                    <a href="#experience" class="btn btn-primary glow-btn">
+                        <span>Current Experience</span> <i class="fas fa-briefcase"></i>
+                    </a>
+                    <a href="./Aadittya_Resume.pdf" class="btn btn-glass" download>
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <span class="social-label">Connect with me:</span>
+                    <a href="https://github.com/aditya8750" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aditya-sharma-5b4a99207" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:aditya8744sharma@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-card-glass zero-gravity">
+                    <div class="glass-frame-container">
+        <img src="./cropped_circle_image (1).png" alt="Aditya Sharma" class="glass-frame-img">
+    </div>
+                    <div class="code-snippet-box">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-title">candidate.json</span>
+                        </div>
+                        <pre class="code-body"><code><span class="keyword">const</span> candidate = {
+  name: <span class="string">'Aditya Sharma'</span>,
+  company: <span class="string">'MagicEdTech (Magic Software Pvt. Ltd.)'</span>,
+  role: <span class="string">'Digital Media Trainee'</span>,
+  degree: <span class="string">'BCA (SRM University)'</span>,
+  skills: [<span class="string">'Java'</span>, <span class="string">'MySQL'</span>, <span class="string">'Jira'</span>, <span class="string">'Accessibility Testing'</span>, <span class="string">'React'</span>]
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (NEW) -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-tag">&lt;work-experience&gt;</div>
+            <h2 class="section-heading cosmic-heading">Current Role & Industry Experience</h2>
+
+            <div class="experience-timeline">
+                <div class="exp-card glass-card hover-lift">
+                    <div class="exp-header">
+                        <div class="exp-role-info">
+                            <h3 class="exp-title">Digital Media Trainee / Associate Developer</h3>
+                            <h4 class="exp-company"><i class="fas fa-building cosmic-icon"></i> MagicEdTech (Magic Software Pvt. Ltd.)</h4>
+                        </div>
+                        <div class="exp-badge">
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> April 2026 – Present</span>
+                            <span class="exp-status">Current Position</span>
+                        </div>
+                    </div>
+                    <p class="exp-summary">
+                        Working with digital learning software solutions, resolving web accessibility and frontend tickets while coordinating technical workflows in an active Agile development team.
+                    </p>
+                    <ul class="exp-responsibilities">
+                        <li><strong>Issue & Bug Tracking:</strong> Managed and resolved frontend UI and accessibility bug tickets using Jira.</li>
+                        <li><strong>Accessibility Compliance:</strong> Tested and validated web applications against WCAG standards using screen readers like NVDA.</li>
+                        <li><strong>Cross-Functional Collaboration:</strong> Collaborated with developers and QA engineers to maintain quality assurance in live digital products.</li>
+                        <li><strong>Web Optimization:</strong> Assisted in reviewing HTML/CSS structural elements for optimal performance and user experience.</li>
+                    </ul>
+                    <div class="project-tech-stack exp-skills">
+                        <span>Jira</span>
+                        <span>Accessibility Testing (WCAG)</span>
+                        <span>NVDA</span>
+                        <span>HTML5/CSS3</span>
+                        <span>Frontend Quality Assurance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section alt-bg">
+        <div class="container">
+            <div class="section-tag">&lt;about-me&gt;</div>
+            <h2 class="section-heading cosmic-heading">Graduate Profile & Technical Focus</h2>
+
+            <div class="about-grid">
+                <div class="about-card glass-card hover-lift">
+                    <div class="card-icon"><i class="fas fa-graduation-cap cosmic-icon"></i></div>
+                    <h3>Academic Foundation</h3>
+                    <p>Graduated with a Bachelor of Computer Applications (BCA) degree from SRM University (2022 - 2025). Equipped with strong theoretical and practical computer science concepts.</p>
+                </div>
+                <div class="about-card glass-card hover-lift">
+                    <div class="card-icon"><i class="fas fa-code-branch cosmic-icon"></i></div>
+                    <h3>Practical Project Experience</h3>
+                    <p>Gained strong practical experience building real-world applications including multi-service platforms, food marketplace systems, and responsive web apps.</p>
+                </div>
+                <div class="about-card glass-card hover-lift">
+                    <div class="card-icon"><i class="fas fa-laptop-code cosmic-icon"></i></div>
+                    <h3>Software Engineering Ambition</h3>
+                    <p>Ready to jumpstart my career in Software Development, backend databases (MySQL), Java programming, and accessible web standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Stack Section -->
+    <section id="tools" class="section">
+        <div class="container">
+            <div class="section-tag">&lt;tech-stack&gt;</div>
+            <h2 class="section-heading cosmic-heading">Skills & Core Competencies</h2>
+
+            <div class="tools-grid">
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fab fa-java tool-icon java"></i>
+                    <div class="tool-info">
+                        <h4>Java</h4>
+                        <span>Core Programming</span>
+                    </div>
+                </div>
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fas fa-database tool-icon mysql"></i>
+                    <div class="tool-info">
+                        <h4>MySQL</h4>
+                        <span>Database Design</span>
+                    </div>
+                </div>
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fab fa-html5 tool-icon html"></i>
+                    <div class="tool-info">
+                        <h4>HTML5 & CSS3</h4>
+                        <span>Modern UI & Layouts</span>
+                    </div>
+                </div>
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fab fa-react tool-icon react"></i>
+                    <div class="tool-info">
+                        <h4>React.js</h4>
+                        <span>Frontend Libraries</span>
+                    </div>
+                </div>
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fab fa-jira tool-icon jira"></i>
+                    <div class="tool-info">
+                        <h4>JIRA</h4>
+                        <span>Agile Workflows</span>
+                    </div>
+                </div>
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fas fa-universal-access tool-icon a11y"></i>
+                    <div class="tool-info">
+                        <h4>Accessibility Testing</h4>
+                        <span>NVDA & WCAG Basics</span>
+                    </div>
+                </div>
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fab fa-node-js tool-icon node"></i>
+                    <div class="tool-info">
+                        <h4>Node.js</h4>
+                        <span>Backend Foundations</span>
+                    </div>
+                </div>
+                <div class="tool-badge glass-card hover-lift">
+                    <i class="fas fa-server tool-icon vps"></i>
+                    <div class="tool-info">
+                        <h4>VPS & Deployment</h4>
+                        <span>Nginx Configuration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <div class="section-tag">&lt;my-work&gt;</div>
+            <h2 class="section-heading cosmic-heading">Self-Built Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card hover-lift">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya8750" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Inest.space</h3>
+                    <p class="project-desc">
+                        A dynamic platform designed for finding local PGs, Hostels, Food, and Laundry options. Developed with secure user authentication, post sharing, and custom filtered feeds.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card hover-lift">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya8750" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Hertale.in</h3>
+                    <p class="project-desc">
+                        An integrated food ordering and culinary marketplace connecting home chefs directly with local customers.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card hover-lift">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya8750" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">E-Learning Web Application</h3>
+                    <p class="project-desc">
+                        An interactive learning dashboard featuring course modules, resource downloads, user authentication, and progress tracking UI.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS3</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card hover-lift">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya8750" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Major Web Clones</h3>
+                    <p class="project-desc">
+                        Fully responsive UI replicas of popular streaming and shopping platforms, built to hone frontend state management and API integration skills.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span>React.js</span>
+                        <span>REST API</span>
+                        <span>CSS Flex/Grid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section">
+        <div class="container">
+            <div class="section-tag">&lt;case-studies&gt;</div>
+            <h2 class="section-heading cosmic-heading">Project Breakdown & Logic</h2>
+
+            <div class="case-study-wrapper">
+                <!-- Case Study 1 -->
+                <div class="case-card glass-card">
+                    <div class="case-tag">Project Study #01</div>
+                    <h3 class="case-title">Inest.space — Aggregation Service Architecture</h3>
+                    
+                    <div class="case-grid">
+                        <div class="case-box">
+                            <span class="box-label"><i class="fas fa-bullseye"></i> Problem Statement</span>
+                            <p>Students often face difficulty discovering centralized information for accommodations and home amenities in new cities.</p>
+                        </div>
+                        <div class="case-box">
+                            <span class="box-label"><i class="fas fa-lightbulb"></i> My Approach</span>
+                            <p>Designed a unified full-stack solution featuring categoric filters, database user management, and seamless API communication.</p>
+                        </div>
+                        <div class="case-box full-width">
+                            <span class="box-label"><i class="fas fa-code"></i> Engineering Insights Learned</span>
+                            <ul class="case-highlights">
+                                <li>Implemented state-driven UI logic in React to handle asynchronous search requests.</li>
+                                <li>Structured RESTful API endpoints for persistent data flows and state persistence.</li>
+                                <li>Practiced optimizing database schema for quick lookup across categorized posts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-card glass-card">
+                    <div class="case-tag">Project Study #02</div>
+                    <h3 class="case-title">Hertale.in — Food Marketplace Web Portal</h3>
+                    
+                    <div class="case-grid">
+                        <div class="case-box">
+                            <span class="box-label"><i class="fas fa-bullseye"></i> Problem Statement</span>
+                            <p>Local home cooks and independent chefs lack dedicated online channels to reach nearby consumers.</p>
+                        </div>
+                        <div class="case-box">
+                            <span class="box-label"><i class="fas fa-lightbulb"></i> My Solution</span>
+                            <p>Created a dynamic portal combining simple ordering workflows with interactive chef portfolio listings.</p>
+                        </div>
+                        <div class="case-box full-width">
+                            <span class="box-label"><i class="fas fa-code"></i> Engineering Insights Learned</span>
+                            <ul class="case-highlights">
+                                <li>Built modern, fully accessible HTML5/CSS3 layouts for smooth viewing on mobile devices.</li>
+                                <li>Integrated dynamic PHP backend script routing to process culinary submissions and inquiries.</li>
+                                <li>Focusing on clean semantic structure to maintain proper accessibility standards.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt-bg">
+        <div class="container">
+            <div class="section-tag">&lt;get-in-touch&gt;</div>
+            <h2 class="section-heading cosmic-heading">Connect & Opportunities</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info-glass glass-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-intro">Feel free to reach out for software engineering opportunities, technical discussions, or interviews.</p>
+                    
+                    <div class="contact-details">
+                        <div class="c-item">
+                            <i class="fas fa-envelope c-icon"></i>
+                            <div>
+                                <span class="c-label">Email</span>
+                                <a href="mailto:aditya8744sharma@gmail.com" class="c-val">aditya8744sharma@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <i class="fas fa-phone-alt c-icon"></i>
+                            <div>
+                                <span class="c-label">Phone</span>
+                                <span class="c-val">+91 8744943204</span>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <i class="fas fa-map-marker-alt c-icon"></i>
+                            <div>
+                                <span class="c-label">Location</span>
+                                <span class="c-val">Delhi, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="./Aadittya_Resume.pdf" class="btn btn-primary full-width-btn glow-btn" download>
+                        <i class="fas fa-file-download"></i> Download Resume (PDF)
+                    </a>
+                </div>
+
+                <div class="contact-form-glass glass-card">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="HR Manager / Team Lead" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="hr@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Software Engineering Opportunity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hi Aditya, we would like to invite you for an interview..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width-btn glow-btn">
+                            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; Aditya Sharma. Built with passion, clean code, and space aesthetics.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/aditya8750" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aditya-sharma-5b4a99207" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS Integration Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("2MnqpWhSfvvk4UwOb");
+        })();
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
